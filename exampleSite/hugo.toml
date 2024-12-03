@@ -3,10 +3,15 @@ title = "johndoe"
 theme = "hugo-coder"
 languageCode = "en"
 defaultContentLanguage = "en"
-paginate = 6
 enableEmoji = true
+
+[pagination]
+pagerSize = 6
+
+[services]
+[services.disqus]
 # Enable Disqus comments
-# disqusShortname = "yourdiscussshortname"
+# shortname = "yourdiscussshortname"
 
 [markup.highlight]
 noClasses = false
@@ -96,6 +101,10 @@ customRemoteJS = []
 # [params.umami]
 # siteID = "ABCDE"
 # scriptURL = "analytics.REGION.umami.is/SCRIPTNAME.js"
+
+# If you want to use One Dollars Stats(https://onedollarstats.com/analytics) for analytics, add this section
+# [params.onedollarstats]
+# id = "data-site-id"
 
 # If you want to implement a Content-Security-Policy, add this section
 # [params.csp]
